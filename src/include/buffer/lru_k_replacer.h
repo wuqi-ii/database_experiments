@@ -12,6 +12,7 @@
 
 #pragma once
 
+#include <deque>
 #include <limits>
 #include <list>
 #include <mutex>  // NOLINT
@@ -140,6 +141,13 @@ class LRUKReplacer {
   [[maybe_unused]] size_t replacer_size_;
   [[maybe_unused]] size_t k_;
   std::mutex latch_;
+
+  struct Node {
+    std::deque<size_t> history_;
+    bool evictable_{false};
+  };
+
+  std::unordered_map<frame_id_t, Node> nodes_;
 };
 
 }  // namespace bustub
