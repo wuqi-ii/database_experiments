@@ -48,6 +48,15 @@ ctest --test-dir build --output-on-failure
 
 初始代码中的部分功能可能尚未实现，测试结果应以成员实际运行记录为准。构建目录中的原有缓存和二进制不作为测试证据。
 
+在 PowerShell 中进入仓库根目录后，可以使用 WSL Ubuntu 22.04 运行 P1 检查脚本。
+
+```powershell
+wsl -d Ubuntu-22.04 -- bash ./p1_test.sh
+```
+
+该脚本使用 WSL 中的 CMake、Clang 14、clang-format-14、clang-tidy-14 和 Python 3，自动创建仓库内的 `build/`，构建三个 P1 模块测试及缓冲池回归测试，执行 P1 范围的格式、lint、静态检查和 CTest。测试程序保存在 `build/test/`，任一步失败时脚本立即停止。后续运行复用 `build/` 中的构建结果。
+
+
 ## 团队协作
 
 成员直接在 `main` 上提交并 push，统一按以下顺序维护：

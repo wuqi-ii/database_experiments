@@ -23,8 +23,8 @@ namespace bustub {
 // dir_是一个动态数组，每个元素保存一个桶的共享指针
 template <typename K, typename V>  // bucket_size_(bucket_size)是初始化成员变量，bucket_size_ 是哈希表对象的成员变量
 ExtendibleHashTable<K, V>::ExtendibleHashTable(size_t bucket_size) : bucket_size_(bucket_size) {
-  dir_.push_back(std::make_shared<Bucket>(bucket_size_, 0));  //创建一个局部深度为0的桶，让第一个目录指向它
-}  //会创建一个Bucket对象，make_shared返回此对象
+  dir_.push_back(std::make_shared<Bucket>(bucket_size_, 0));  // 创建一个局部深度为0的桶，让第一个目录指向它
+}  // 会创建一个Bucket对象，make_shared返回此对象
 
 template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::IndexOf(const K &key) -> size_t {
@@ -64,13 +64,13 @@ template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::GetNumBucketsInternal() const -> int {
   return num_buckets_;
 }
-//整个哈希表的查找
+// 整个哈希表的查找
 template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::Find(const K &key, V &value) -> bool {
   std::scoped_lock<std::mutex> lock(latch_);
   return dir_[IndexOf(key)]->Find(key, value);
 }
-//哈希表删除
+// 哈希表删除
 template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::Remove(const K &key) -> bool {
   std::scoped_lock<std::mutex> lock(latch_);
@@ -133,7 +133,7 @@ ExtendibleHashTable<K, V>::Bucket::Bucket(size_t array_size, int depth) : size_(
 
 template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::Bucket::Find(const K &key, V &value) -> bool {
-  //遍历检查键值对，找到输出值
+  // 遍历检查键值对，找到输出值
   for (const auto &item : list_) {
     if (item.first == key) {
       value = item.second;
@@ -156,7 +156,7 @@ auto ExtendibleHashTable<K, V>::Bucket::Remove(const K &key) -> bool {
 
 template <typename K, typename V>
 auto ExtendibleHashTable<K, V>::Bucket::Insert(const K &key, const V &value) -> bool {
-  //插入
+  // 插入
   for (auto &item : list_) {
     if (item.first == key) {
       item.second = value;
@@ -166,7 +166,7 @@ auto ExtendibleHashTable<K, V>::Bucket::Insert(const K &key, const V &value) -> 
   if (IsFull()) {
     return false;
   }
-  list_.emplace_back(key, value);  //在链表末尾构造一对键值
+  list_.emplace_back(key, value);  // 在链表末尾构造一对键值
   return true;
 }
 

@@ -73,8 +73,7 @@ auto LRUKReplacer::Evict(frame_id_t *frame_id) -> bool {
     bool best_under_k = best.history_.size() < k_;
 
     // 访问不足 K 次的帧优先淘汰。同组内选历史中最早时间戳更小的帧。
-    if ((under_k && !best_under_k) ||
-        (under_k == best_under_k && node.history_.front() < best.history_.front())) {
+    if ((under_k && !best_under_k) || (under_k == best_under_k && node.history_.front() < best.history_.front())) {
       victim = it;
     }
   }
