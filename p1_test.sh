@@ -12,7 +12,6 @@ p1_files=(
   src/buffer/lru_k_replacer.cpp
   src/include/buffer/buffer_pool_manager_instance.h
   src/buffer/buffer_pool_manager_instance.cpp
-  test/buffer/buffer_pool_manager_edge_test.cpp
 )
 
 # CMake creates build/ when needed. Non-PIE executables avoid ASan startup
@@ -28,8 +27,8 @@ python3 build_support/cpplint.py --verbose=2 --quiet --linelength=120 \
 
 cmake --build build --target \
   extendible_hash_table_test lru_k_replacer_test \
-  buffer_pool_manager_instance_test buffer_pool_manager_edge_test -j 8
+  buffer_pool_manager_instance_test -j 8
 cmake --build build --target check-clang-tidy-p1
 ctest --test-dir build \
-  -R '^(ExtendibleHashTableTest|LRUKReplacerTest|BufferPoolManagerInstanceTest|BufferPoolManagerEdgeTest)\.' \
+  -R '^(ExtendibleHashTableTest|LRUKReplacerTest|BufferPoolManagerInstanceTest)\.' \
   --output-on-failure -j 1

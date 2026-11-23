@@ -54,8 +54,10 @@ ctest --test-dir build --output-on-failure
 wsl -d Ubuntu-22.04 -- bash ./p1_test.sh
 ```
 
-该脚本使用 WSL 中的 CMake、Clang 14、clang-format-14、clang-tidy-14 和 Python 3，自动创建仓库内的 `build/`，构建三个 P1 模块测试及缓冲池回归测试，执行 P1 范围的格式、lint、静态检查和 CTest。测试程序保存在 `build/test/`，任一步失败时脚本立即停止。后续运行复用 `build/` 中的构建结果。
+该脚本使用 WSL 中的 CMake、Clang 14、clang-format-14、clang-tidy-14 和 Python 3，自动创建仓库内的 `build/`，构建原有三个 P1 模块测试，执行 P1 范围的格式、lint、静态检查和 CTest。测试程序保存在 `build/test/`，任一步失败时脚本立即停止。后续运行复用 `build/` 中的构建结果。
 
+
+P1 测试截图显示 29 项测试全部通过，详见 [测试截图](测试截图/project1.png)。
 
 ## 团队协作
 
