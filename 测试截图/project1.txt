@@ -1,0 +1,468 @@
+wuqi@wuqi-qi:/mnt/c/Users/ASUS/Desktop/数据库/experiment_1$ sudo bash p1_test.sh
+[sudo] password for wuqi: 
+-- You're using Clang 14.0.0
+-- BusTub/main found clang-format at /usr/bin/clang-format-14
+-- BusTub/main found clang-tidy at /usr/bin/clang-tidy-14
+-- BusTub/main found clang-apply-replacements at /usr/bin/clang-apply-replacements-14
+-- BusTub/main found cpplint at /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/build_support/cpplint.py
+Build mode: Debug
+address sanitizer will be enabled in debug mode.
+-- CMAKE_CXX_FLAGS: 
+-- CMAKE_CXX_FLAGS_DEBUG: -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls
+-- CMAKE_EXE_LINKER_FLAGS: -no-pie
+-- CMAKE_SHARED_LINKER_FLAGS: 
+-- Module support is disabled.
+-- Version: 9.0.0
+-- Build type: Debug
+-- CXX_STANDARD: 17
+-- Required features: cxx_variadic_templates
+-- libfort build options:  wchar support = ON;  build type = common
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/build
+Consolidate compiler generated dependencies of target bustub_concurrency
+Consolidate compiler generated dependencies of target fort
+Consolidate compiler generated dependencies of target bustub_catalog
+Consolidate compiler generated dependencies of target bustub_common
+Consolidate compiler generated dependencies of target bustub_buffer
+Consolidate compiler generated dependencies of target bustub_container_disk_hash
+Consolidate compiler generated dependencies of target bustub_statement
+Consolidate compiler generated dependencies of target bustub_binder
+[  1%] Built target fort
+Consolidate compiler generated dependencies of target bustub_container_hash
+[  1%] Built target bustub_container_hash
+[  3%] Built target bustub_container_disk_hash
+[  4%] Built target bustub_concurrency
+Consolidate compiler generated dependencies of target bustub_recovery
+Consolidate compiler generated dependencies of target bustub_storage_disk
+[  7%] Built target bustub_buffer
+Consolidate compiler generated dependencies of target bustub_execution
+[  9%] Built target bustub_catalog
+Consolidate compiler generated dependencies of target bustub_storage_index
+Consolidate compiler generated dependencies of target bustub_storage_page
+[ 12%] Built target bustub_common
+Consolidate compiler generated dependencies of target bustub_storage_table
+[ 13%] Built target bustub_storage_disk
+Consolidate compiler generated dependencies of target bustub_type
+[ 18%] Built target bustub_recovery
+[ 21%] Built target bustub_statement
+Consolidate compiler generated dependencies of target bustub_primer
+Consolidate compiler generated dependencies of target bustub_planner
+[ 24%] Built target bustub_storage_table
+Consolidate compiler generated dependencies of target bustub_optimizer
+[ 25%] Built target bustub_primer
+Consolidate compiler generated dependencies of target bustub_murmur3
+[ 30%] Built target bustub_storage_index
+Consolidate compiler generated dependencies of target duckdb_pg_query
+gmake[3]: Warning: File 'third_party/murmur3/CMakeFiles/bustub_murmur3.dir/compiler_depend.make' has modification time 0.067 s in the future
+[ 39%] Built target bustub_binder
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 40%] Built target bustub_murmur3
+Consolidate compiler generated dependencies of target fmt
+Consolidate compiler generated dependencies of target gtest
+[ 46%] Built target bustub_storage_page
+[ 50%] Built target fmt
+[ 51%] Built target gtest
+[ 59%] Built target bustub_type
+Consolidate compiler generated dependencies of target gmock
+[ 66%] Built target duckdb_pg_query
+[ 71%] Built target bustub_planner
+[ 72%] Built target gmock
+Consolidate compiler generated dependencies of target gmock_main
+[ 81%] Built target bustub_optimizer
+gmake[3]: Warning: File 'third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.make' has modification time 0.036 s in the future
+[ 96%] Built target bustub_execution
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 98%] Built target gmock_main
+[ 98%] Built target bustub
+Consolidate compiler generated dependencies of target extendible_hash_table_test
+[100%] Built target extendible_hash_table_test
+[  1%] Built target fort
+[  7%] Built target bustub_concurrency
+[  7%] Built target bustub_container_disk_hash
+[  7%] Built target bustub_buffer
+[  9%] Built target bustub_catalog
+[  9%] Built target bustub_container_hash
+[ 12%] Built target bustub_common
+[ 13%] Built target bustub_storage_disk
+[ 19%] Built target bustub_statement
+[ 21%] Built target bustub_recovery
+[ 30%] Built target bustub_binder
+[ 34%] Built target bustub_storage_index
+[ 37%] Built target bustub_primer
+[ 39%] Built target bustub_storage_table
+[ 40%] Built target bustub_murmur3
+[ 46%] Built target bustub_storage_page
+[ 50%] Built target fmt
+[ 57%] Built target bustub_type
+[ 62%] Built target bustub_planner
+[ 63%] Built target gtest
+[ 71%] Built target duckdb_pg_query
+[ 86%] Built target bustub_execution
+[ 95%] Built target bustub_optimizer
+[ 96%] Built target gmock
+[ 96%] Built target bustub
+[ 98%] Built target gmock_main
+Consolidate compiler generated dependencies of target lru_k_replacer_test
+[100%] Built target lru_k_replacer_test
+[  1%] Built target fort
+[  4%] Built target bustub_concurrency
+[  4%] Built target bustub_container_disk_hash
+[  7%] Built target bustub_buffer
+[  9%] Built target bustub_catalog
+[  9%] Built target bustub_container_hash
+[ 12%] Built target bustub_common
+[ 13%] Built target bustub_storage_disk
+[ 19%] Built target bustub_recovery
+[ 21%] Built target bustub_statement
+[ 34%] Built target bustub_binder
+[ 34%] Built target bustub_storage_index
+[ 36%] Built target bustub_primer
+[ 39%] Built target bustub_storage_table
+[ 40%] Built target bustub_murmur3
+[ 46%] Built target bustub_storage_page
+[ 50%] Built target fmt
+[ 57%] Built target bustub_type
+[ 62%] Built target bustub_planner
+[ 68%] Built target gtest
+[ 71%] Built target duckdb_pg_query
+[ 86%] Built target bustub_execution
+[ 95%] Built target bustub_optimizer
+[ 96%] Built target gmock
+[ 96%] Built target bustub
+[ 98%] Built target gmock_main
+Consolidate compiler generated dependencies of target buffer_pool_manager_instance_test
+[100%] Built target buffer_pool_manager_instance_test
+Enabled checks:
+    bugprone-argument-comment
+    bugprone-assert-side-effect
+    bugprone-bad-signal-to-kill-thread
+    bugprone-bool-pointer-implicit-conversion
+    bugprone-branch-clone
+    bugprone-copy-constructor-init
+    bugprone-dangling-handle
+    bugprone-dynamic-static-initializers
+    bugprone-fold-init-type
+    bugprone-forward-declaration-namespace
+    bugprone-forwarding-reference-overload
+    bugprone-inaccurate-erase
+    bugprone-incorrect-roundings
+    bugprone-infinite-loop
+    bugprone-integer-division
+    bugprone-lambda-function-name
+    bugprone-macro-parentheses
+    bugprone-macro-repeated-side-effects
+    bugprone-misplaced-operator-in-strlen-in-alloc
+    bugprone-misplaced-pointer-arithmetic-in-alloc
+    bugprone-misplaced-widening-cast
+    bugprone-move-forwarding-reference
+    bugprone-multiple-statement-macro
+    bugprone-no-escape
+    bugprone-not-null-terminated-result
+    bugprone-parent-virtual-call
+    bugprone-posix-return
+    bugprone-redundant-branch-condition
+    bugprone-signal-handler
+    bugprone-sizeof-container
+    bugprone-sizeof-expression
+    bugprone-spuriously-wake-up-functions
+    bugprone-string-constructor
+    bugprone-string-integer-assignment
+    bugprone-string-literal-with-embedded-nul
+    bugprone-stringview-nullptr
+    bugprone-suspicious-enum-usage
+    bugprone-suspicious-memory-comparison
+    bugprone-suspicious-memset-usage
+    bugprone-suspicious-missing-comma
+    bugprone-suspicious-semicolon
+    bugprone-suspicious-string-compare
+    bugprone-swapped-arguments
+    bugprone-terminating-continue
+    bugprone-throw-keyword-missing
+    bugprone-too-small-loop-variable
+    bugprone-undefined-memory-manipulation
+    bugprone-undelegated-constructor
+    bugprone-unhandled-exception-at-new
+    bugprone-unused-raii
+    bugprone-unused-return-value
+    bugprone-use-after-move
+    bugprone-virtual-near-miss
+    clang-analyzer-apiModeling.StdCLibraryFunctions
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.CallAndMessageModeling
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.PlacementNew
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtrModeling
+    clang-analyzer-cplusplus.StringChecker
+    clang-analyzer-cplusplus.VirtualCallModeling
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullabilityBase
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NSOrCFErrorDerefChecker
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-valist.CopyToSelf
+    clang-analyzer-valist.Uninitialized
+    clang-analyzer-valist.Unterminated
+    clang-analyzer-valist.ValistBase
+    clang-analyzer-webkit.NoUncountedMemberChecker
+    clang-analyzer-webkit.RefCntblBaseVirtualDtor
+    clang-analyzer-webkit.UncountedLambdaCapturesChecker
+    google-build-explicit-make-pair
+    google-build-namespaces
+    google-build-using-namespace
+    google-default-arguments
+    google-explicit-constructor
+    google-global-names-in-headers
+    google-objc-avoid-nsobject-new
+    google-objc-avoid-throwing-exception
+    google-objc-function-naming
+    google-objc-global-variable-declaration
+    google-readability-braces-around-statements
+    google-readability-casting
+    google-readability-function-size
+    google-readability-namespace-comments
+    google-readability-todo
+    google-runtime-int
+    google-runtime-operator
+    google-upgrade-googletest-case
+    modernize-avoid-bind
+    modernize-concat-nested-namespaces
+    modernize-deprecated-headers
+    modernize-deprecated-ios-base-aliases
+    modernize-loop-convert
+    modernize-make-shared
+    modernize-make-unique
+    modernize-pass-by-value
+    modernize-raw-string-literal
+    modernize-redundant-void-arg
+    modernize-replace-auto-ptr
+    modernize-replace-disallow-copy-and-assign-macro
+    modernize-replace-random-shuffle
+    modernize-return-braced-init-list
+    modernize-shrink-to-fit
+    modernize-unary-static-assert
+    modernize-use-auto
+    modernize-use-bool-literals
+    modernize-use-default-member-init
+    modernize-use-emplace
+    modernize-use-equals-default
+    modernize-use-equals-delete
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-override
+    modernize-use-trailing-return-type
+    modernize-use-transparent-functors
+    modernize-use-uncaught-exceptions
+    modernize-use-using
+    performance-faster-string-find
+    performance-for-range-copy
+    performance-implicit-conversion-in-loop
+    performance-inefficient-algorithm
+    performance-inefficient-string-concatenation
+    performance-inefficient-vector-operation
+    performance-move-const-arg
+    performance-move-constructor-init
+    performance-no-automatic-move
+    performance-no-int-to-ptr
+    performance-noexcept-move-constructor
+    performance-trivially-destructible
+    performance-type-promotion-in-math-fn
+    performance-unnecessary-copy-initialization
+    performance-unnecessary-value-param
+    portability-restrict-system-includes
+    portability-simd-intrinsics
+    readability-avoid-const-params-in-decls
+    readability-braces-around-statements
+    readability-const-return-type
+    readability-container-contains
+    readability-container-data-pointer
+    readability-container-size-empty
+    readability-delete-null-pointer
+    readability-duplicate-include
+    readability-else-after-return
+    readability-function-size
+    readability-identifier-naming
+    readability-implicit-bool-conversion
+    readability-inconsistent-declaration-parameter-name
+    readability-isolate-declaration
+    readability-misleading-indentation
+    readability-misplaced-array-index
+    readability-named-parameter
+    readability-non-const-parameter
+    readability-redundant-control-flow
+    readability-redundant-declaration
+    readability-redundant-function-ptr-dereference
+    readability-redundant-member-init
+    readability-redundant-preprocessor
+    readability-redundant-smartptr-get
+    readability-redundant-string-cstr
+    readability-redundant-string-init
+    readability-simplify-boolean-expr
+    readability-simplify-subscript-expr
+    readability-static-accessed-through-instance
+    readability-static-definition-in-anonymous-namespace
+    readability-string-compare
+    readability-suspicious-call-argument
+    readability-uniqueptr-delete-release
+    readability-uppercase-literal-suffix
+    readability-use-anyofallof
+
+Checking: /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/src/buffer/buffer_pool_manager_instance.cpp
+Checking: /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/src/buffer/lru_k_replacer.cpp
+Checking: /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/src/container/hash/extendible_hash_table.cpp
+
+Built target check-clang-tidy-p1
+Internal ctest changing into directory: /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/build
+Test project /mnt/c/Users/ASUS/Desktop/数据库/experiment_1/build
+      Start  2: BufferPoolManagerInstanceTest.SampleTest
+ 1/29 Test  #2: BufferPoolManagerInstanceTest.SampleTest .........   Passed    0.09 sec
+      Start  3: BufferPoolManagerInstanceTest.BinaryDataTest
+ 2/29 Test  #3: BufferPoolManagerInstanceTest.BinaryDataTest .....   Passed    0.09 sec
+      Start  4: BufferPoolManagerInstanceTest.NewPage
+ 3/29 Test  #4: BufferPoolManagerInstanceTest.NewPage ............   Passed    0.08 sec
+      Start  5: BufferPoolManagerInstanceTest.UnpinPage
+ 4/29 Test  #5: BufferPoolManagerInstanceTest.UnpinPage ..........   Passed    0.10 sec
+      Start  6: BufferPoolManagerInstanceTest.FetchPage
+ 5/29 Test  #6: BufferPoolManagerInstanceTest.FetchPage ..........   Passed    0.11 sec
+      Start  7: BufferPoolManagerInstanceTest.DeletePage
+ 6/29 Test  #7: BufferPoolManagerInstanceTest.DeletePage .........   Passed    0.10 sec
+      Start  8: BufferPoolManagerInstanceTest.IsDirty
+ 7/29 Test  #8: BufferPoolManagerInstanceTest.IsDirty ............   Passed    0.08 sec
+      Start  9: BufferPoolManagerInstanceTest.ConcurrencyTest
+ 8/29 Test  #9: BufferPoolManagerInstanceTest.ConcurrencyTest ....   Passed    0.68 sec
+      Start 10: BufferPoolManagerInstanceTest.IntegratedTest
+ 9/29 Test #10: BufferPoolManagerInstanceTest.IntegratedTest .....   Passed   28.21 sec
+      Start 11: BufferPoolManagerInstanceTest.HardTest_1
+10/29 Test #11: BufferPoolManagerInstanceTest.HardTest_1 .........   Passed   27.42 sec
+      Start 12: BufferPoolManagerInstanceTest.HardTest_2
+11/29 Test #12: BufferPoolManagerInstanceTest.HardTest_2 .........   Passed    9.95 sec
+      Start 13: BufferPoolManagerInstanceTest.HardTest_3
+12/29 Test #13: BufferPoolManagerInstanceTest.HardTest_3 .........   Passed   11.06 sec
+      Start 14: BufferPoolManagerInstanceTest.HardTest_4
+13/29 Test #14: BufferPoolManagerInstanceTest.HardTest_4 .........   Passed   19.52 sec
+      Start 16: LRUKReplacerTest.SampleTest
+14/29 Test #16: LRUKReplacerTest.SampleTest ......................   Passed    0.06 sec
+      Start 17: LRUKReplacerTest.Evict
+15/29 Test #17: LRUKReplacerTest.Evict ...........................   Passed    0.08 sec
+      Start 18: LRUKReplacerTest.Size
+16/29 Test #18: LRUKReplacerTest.Size ............................   Passed    0.05 sec
+      Start 19: LRUKReplacerTest.ConcurrencyTest
+17/29 Test #19: LRUKReplacerTest.ConcurrencyTest .................   Passed    0.08 sec
+      Start 30: ExtendibleHashTableTest.InsertSplit
+18/29 Test #30: ExtendibleHashTableTest.InsertSplit ..............   Passed    0.07 sec
+      Start 31: ExtendibleHashTableTest.InsertMultipleSplit
+19/29 Test #31: ExtendibleHashTableTest.InsertMultipleSplit ......   Passed    0.06 sec
+      Start 32: ExtendibleHashTableTest.ConcurrentInsertFind
+20/29 Test #32: ExtendibleHashTableTest.ConcurrentInsertFind .....   Passed    0.09 sec
+      Start 33: ExtendibleHashTableTest.ConcurrentRemoveInsert
+21/29 Test #33: ExtendibleHashTableTest.ConcurrentRemoveInsert ...   Passed    0.07 sec
+      Start 34: ExtendibleHashTableTest.InitiallyEmpty
+22/29 Test #34: ExtendibleHashTableTest.InitiallyEmpty ...........   Passed    0.02 sec
+      Start 35: ExtendibleHashTableTest.InsertAndFind
+23/29 Test #35: ExtendibleHashTableTest.InsertAndFind ............   Passed    0.05 sec
+      Start 36: ExtendibleHashTableTest.GlobalDepth
+24/29 Test #36: ExtendibleHashTableTest.GlobalDepth ..............   Passed    0.06 sec
+      Start 37: ExtendibleHashTableTest.LocalDepth
+25/29 Test #37: ExtendibleHashTableTest.LocalDepth ...............   Passed    0.05 sec
+      Start 38: ExtendibleHashTableTest.InsertAndReplace
+26/29 Test #38: ExtendibleHashTableTest.InsertAndReplace .........   Passed    0.06 sec
+      Start 39: ExtendibleHashTableTest.Remove
+27/29 Test #39: ExtendibleHashTableTest.Remove ...................   Passed    0.06 sec
+      Start 40: ExtendibleHashTableTest.GetNumBuckets
+28/29 Test #40: ExtendibleHashTableTest.GetNumBuckets ............   Passed    0.06 sec
+      Start 41: ExtendibleHashTableTest.IntegratedTest
+29/29 Test #41: ExtendibleHashTableTest.IntegratedTest ...........   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 29
+
+Total Test time (real) = 100.07 sec
+wuqi@wuqi-qi:/mnt/c/Users/ASUS/Desktop/数据库/experiment_1$ 
