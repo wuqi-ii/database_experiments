@@ -75,7 +75,28 @@ class BPlusTree {
   void RemoveFromFile(const std::string &file_name, Transaction *transaction = nullptr);
 
  private:
+  // 分工文档约定的操作类型，FindLeafPage 据此决定锁策略（单线程阶段忽略）
+  enum class Operation { SEARCH, INSERT, REMOVE };
+
   void UpdateRootPageId(int insert_record = 0);
+
+  /* ---------- A 负责实现 ---------- */
+  // 返回已固定的叶子 Page *，调用者负责 Unpin；leftmost 用于寻找最左叶子
+  auto FindLeafPage(const KeyType &key, Operation operation, Transaction *transaction, bool leftmost = false)
+      -> Page *;
+  void StartNewTree(const KeyType &key, const ValueType &value);
+  auto SplitLeaf(LeafPage *leaf) -> Page *;
+  auto SplitInternal(InternalPage *internal, KeyType *separator) -> Page *;
+  void InsertIntoParent(BPlusTreePage *left, const KeyType &separator, BPlusTreePage *right,
+                        Transaction *transaction);
+  // 统一根编号入口：内存值 + 头部页记录
+  void SetRootPageId(page_id_t new_root_id);
+  // 更新子页的父编号，单线程下自行 Fetch / Unpin
+  void SetChildParent(page_id_t child_id, page_id_t parent_id, Transaction *transaction);
+
+  /* ---------- B 负责实现（A 在此统一声明） ---------- */
+  void RebalanceAfterDelete(BPlusTreePage *node, Transaction *transaction);
+  void AdjustRoot(BPlusTreePage *root, Transaction *transaction);
 
   /* Debug Routines for FREE!! */
   void ToGraph(BPlusTreePage *page, BufferPoolManager *bpm, std::ofstream &out) const;
@@ -89,6 +110,8 @@ class BPlusTree {
   KeyComparator comparator_;
   int leaf_max_size_;
   int internal_max_size_;
+  // 头部页是否已经为本索引创建过 <name, root_id> 记录
+  bool root_record_created_{false};
 };
 
 }  // namespace bustub
